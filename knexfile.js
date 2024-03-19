@@ -7,11 +7,11 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      host:"localhost",
+      host:"pernpostgres.postgres.database.azure.com",
       port: 5432,
-      database:"todo", // The name of your database
-      user:"my_user", // Your username
-      password:"pyarapakistan", // Your password
+      database:"postgres", // The name of your database
+      user:"postadmin", // Your username
+      password:"@@Pernapp123", // Your password
     },
   },
 
@@ -34,9 +34,10 @@ module.exports = {
   production: {
     client: 'postgresql',
     connection: {
-      database: 'todo',
-      user:     'my_user',
-      password: 'pyarapakistan',
+      host:"pernpostgres.postgres.database.azure.com",
+      database: "postgres",
+      user:     "postadmin",
+      password: "@@Pernapp123",
     },
     pool: {
       min: 2,
